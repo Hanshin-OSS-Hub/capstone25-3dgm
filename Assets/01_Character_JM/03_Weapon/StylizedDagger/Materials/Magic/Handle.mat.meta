@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 69de6065d5a12ca4faea3d261986069f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 274957
+  packageName: Stylized Dagger
+  packageVersion: 1.0
+  assetPath: Assets/StylizedDagger/Materials/Magic/Handle.mat
+  uploadId: 639781

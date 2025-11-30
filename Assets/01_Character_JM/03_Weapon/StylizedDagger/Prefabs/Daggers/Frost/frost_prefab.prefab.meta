@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f39e78b9f0b34904b979153b37d7e6ca
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 274957
+  packageName: Stylized Dagger
+  packageVersion: 1.0
+  assetPath: Assets/StylizedDagger/Prefabs/Daggers/Frost/frost_prefab.prefab
+  uploadId: 639781

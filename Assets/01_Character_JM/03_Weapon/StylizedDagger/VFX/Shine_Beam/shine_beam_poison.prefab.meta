@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: de96cd1438df3a34e86134a7afc1b421
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 274957
+  packageName: Stylized Dagger
+  packageVersion: 1.0
+  assetPath: Assets/StylizedDagger/VFX/Shine_Beam/shine_beam_poison.prefab
+  uploadId: 639781

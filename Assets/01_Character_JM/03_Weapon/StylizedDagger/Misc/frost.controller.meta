@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bfebc47b345f46046824a443e1151db7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 274957
+  packageName: Stylized Dagger
+  packageVersion: 1.0
+  assetPath: Assets/StylizedDagger/Misc/frost.controller
+  uploadId: 639781

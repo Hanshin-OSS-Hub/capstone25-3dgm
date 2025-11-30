@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 36ce4e14c8dd8d44f802e7499e24afc8
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 274957
+  packageName: Stylized Dagger
+  packageVersion: 1.0
+  assetPath: Assets/StylizedDagger/Prefabs/Daggers/Poison/poison_prefab.prefab
+  uploadId: 639781

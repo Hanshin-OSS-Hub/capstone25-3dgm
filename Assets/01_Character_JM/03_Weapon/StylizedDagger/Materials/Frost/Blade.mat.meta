@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6a37636052ba0ba4ca7890a72441825b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 274957
+  packageName: Stylized Dagger
+  packageVersion: 1.0
+  assetPath: Assets/StylizedDagger/Materials/Frost/Blade.mat
+  uploadId: 639781

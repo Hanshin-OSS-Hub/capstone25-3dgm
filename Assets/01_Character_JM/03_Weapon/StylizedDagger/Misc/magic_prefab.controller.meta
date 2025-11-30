@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2cafedfa781092445957aa65cf43655f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 274957
+  packageName: Stylized Dagger
+  packageVersion: 1.0
+  assetPath: Assets/StylizedDagger/Misc/magic_prefab.controller
+  uploadId: 639781

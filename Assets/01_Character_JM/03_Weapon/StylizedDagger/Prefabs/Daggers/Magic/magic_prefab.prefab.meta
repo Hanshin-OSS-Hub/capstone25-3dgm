@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1fed879992453b141bb7a216eca18613
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 274957
+  packageName: Stylized Dagger
+  packageVersion: 1.0
+  assetPath: Assets/StylizedDagger/Prefabs/Daggers/Magic/magic_prefab.prefab
+  uploadId: 639781

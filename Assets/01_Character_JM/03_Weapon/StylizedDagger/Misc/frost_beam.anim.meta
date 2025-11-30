@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2b9a3d936f2824c42a343d686cfbfb37
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 274957
+  packageName: Stylized Dagger
+  packageVersion: 1.0
+  assetPath: Assets/StylizedDagger/Misc/frost_beam.anim
+  uploadId: 639781

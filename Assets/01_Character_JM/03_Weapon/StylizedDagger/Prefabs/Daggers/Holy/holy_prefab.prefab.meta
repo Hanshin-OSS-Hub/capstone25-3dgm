@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: af02caf1dbc158e41a349f7d498fedd2
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 274957
+  packageName: Stylized Dagger
+  packageVersion: 1.0
+  assetPath: Assets/StylizedDagger/Prefabs/Daggers/Holy/holy_prefab.prefab
+  uploadId: 639781

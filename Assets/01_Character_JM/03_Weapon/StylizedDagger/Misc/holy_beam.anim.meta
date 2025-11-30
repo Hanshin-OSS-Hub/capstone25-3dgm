@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b519ed3a22542f64fa85554de9a144c0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 274957
+  packageName: Stylized Dagger
+  packageVersion: 1.0
+  assetPath: Assets/StylizedDagger/Misc/holy_beam.anim
+  uploadId: 639781

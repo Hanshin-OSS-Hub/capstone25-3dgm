@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 328d9cd182655cb499c190a571d6d2f3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 274957
+  packageName: Stylized Dagger
+  packageVersion: 1.0
+  assetPath: Assets/StylizedDagger/Misc/magic_beam.anim
+  uploadId: 639781
