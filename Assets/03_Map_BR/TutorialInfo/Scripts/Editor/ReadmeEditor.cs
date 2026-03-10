@@ -6,43 +6,43 @@ using System;
 using System.IO;
 using System.Reflection;
 
-[CustomEditor(typeof(Readme))]
+[CustomEditor(typeof(Readmet))]
 [InitializeOnLoad]
-public class ReadmeEditor : Editor
+public class ReadmetEditor : Editor
 {
-    static string s_ShowedReadmeSessionStateName = "ReadmeEditor.showedReadme";
+    static string s_ShowedReadmetSessionStateName = "ReadmetEditor.showedReadmet";
     
-    static string s_ReadmeSourceDirectory = "Assets/TutorialInfo";
+    static string s_ReadmetSourceDirectory = "Assets/TutorialInfo";
 
     const float k_Space = 16f;
 
-    static ReadmeEditor()
+    static ReadmetEditor()
     {
-        EditorApplication.delayCall += SelectReadmeAutomatically;
+        EditorApplication.delayCall += SelectReadmetAutomatically;
     }
 
     static void RemoveTutorial()
     {
-        if (EditorUtility.DisplayDialog("Remove Readme Assets",
+        if (EditorUtility.DisplayDialog("Remove Readmet Assets",
             
-            $"All contents under {s_ReadmeSourceDirectory} will be removed, are you sure you want to proceed?",
+            $"All contents under {s_ReadmetSourceDirectory} will be removed, are you sure you want to proceed?",
             "Proceed",
             "Cancel"))
         {
-            if (Directory.Exists(s_ReadmeSourceDirectory))
+            if (Directory.Exists(s_ReadmetSourceDirectory))
             {
-                FileUtil.DeleteFileOrDirectory(s_ReadmeSourceDirectory);
-                FileUtil.DeleteFileOrDirectory(s_ReadmeSourceDirectory + ".meta");
+                FileUtil.DeleteFileOrDirectory(s_ReadmetSourceDirectory);
+                FileUtil.DeleteFileOrDirectory(s_ReadmetSourceDirectory + ".meta");
             }
             else
             {
-                Debug.Log($"Could not find the Readme folder at {s_ReadmeSourceDirectory}");
+                Debug.Log($"Could not find the Readmet folder at {s_ReadmetSourceDirectory}");
             }
 
-            var readmeAsset = SelectReadme();
-            if (readmeAsset != null)
+            var ReadmetAsset = SelectReadmet();
+            if (ReadmetAsset != null)
             {
-                var path = AssetDatabase.GetAssetPath(readmeAsset);
+                var path = AssetDatabase.GetAssetPath(ReadmetAsset);
                 FileUtil.DeleteFileOrDirectory(path + ".meta");
                 FileUtil.DeleteFileOrDirectory(path);
             }
@@ -51,17 +51,17 @@ public class ReadmeEditor : Editor
         }
     }
 
-    static void SelectReadmeAutomatically()
+    static void SelectReadmetAutomatically()
     {
-        if (!SessionState.GetBool(s_ShowedReadmeSessionStateName, false))
+        if (!SessionState.GetBool(s_ShowedReadmetSessionStateName, false))
         {
-            var readme = SelectReadme();
-            SessionState.SetBool(s_ShowedReadmeSessionStateName, true);
+            var Readmet = SelectReadmet();
+            SessionState.SetBool(s_ShowedReadmetSessionStateName, true);
 
-            if (readme && !readme.loadedLayout)
+            if (Readmet && !Readmet.loadedLayout)
             {
                 LoadLayout();
-                readme.loadedLayout = true;
+                Readmet.loadedLayout = true;
             }
         }
     }
@@ -74,44 +74,44 @@ public class ReadmeEditor : Editor
         method.Invoke(null, new object[] { Path.Combine(Application.dataPath, "TutorialInfo/Layout.wlt"), false });
     }
 
-    static Readme SelectReadme()
+    static Readmet SelectReadmet()
     {
-        var ids = AssetDatabase.FindAssets("Readme t:Readme");
+        var ids = AssetDatabase.FindAssets("Readmet t:Readmet");
         if (ids.Length == 1)
         {
-            var readmeObject = AssetDatabase.LoadMainAssetAtPath(AssetDatabase.GUIDToAssetPath(ids[0]));
+            var ReadmetObject = AssetDatabase.LoadMainAssetAtPath(AssetDatabase.GUIDToAssetPath(ids[0]));
 
-            Selection.objects = new UnityEngine.Object[] { readmeObject };
+            Selection.objects = new UnityEngine.Object[] { ReadmetObject };
 
-            return (Readme)readmeObject;
+            return (Readmet)ReadmetObject;
         }
         else
         {
-            Debug.Log("Couldn't find a readme");
+            Debug.Log("Couldn't find a Readmet");
             return null;
         }
     }
 
     protected override void OnHeaderGUI()
     {
-        var readme = (Readme)target;
+        var Readmet = (Readmet)target;
         Init();
 
         var iconWidth = Mathf.Min(EditorGUIUtility.currentViewWidth / 3f - 20f, 128f);
 
         GUILayout.BeginHorizontal("In BigTitle");
         {
-            if (readme.icon != null)
+            if (Readmet.icon != null)
             {
                 GUILayout.Space(k_Space);
-                GUILayout.Label(readme.icon, GUILayout.Width(iconWidth), GUILayout.Height(iconWidth));
+                GUILayout.Label(Readmet.icon, GUILayout.Width(iconWidth), GUILayout.Height(iconWidth));
             }
             GUILayout.Space(k_Space);
             GUILayout.BeginVertical();
             {
 
                 GUILayout.FlexibleSpace();
-                GUILayout.Label(readme.title, TitleStyle);
+                GUILayout.Label(Readmet.title, TitleStyle);
                 GUILayout.FlexibleSpace();
             }
             GUILayout.EndVertical();
@@ -122,10 +122,10 @@ public class ReadmeEditor : Editor
 
     public override void OnInspectorGUI()
     {
-        var readme = (Readme)target;
+        var Readmet = (Readmet)target;
         Init();
 
-        foreach (var section in readme.sections)
+        foreach (var section in Readmet.sections)
         {
             if (!string.IsNullOrEmpty(section.heading))
             {
@@ -148,7 +148,7 @@ public class ReadmeEditor : Editor
             GUILayout.Space(k_Space);
         }
 
-        if (GUILayout.Button("Remove Readme Assets", ButtonStyle))
+        if (GUILayout.Button("Remove Readmet Assets", ButtonStyle))
         {
             RemoveTutorial();
         }
