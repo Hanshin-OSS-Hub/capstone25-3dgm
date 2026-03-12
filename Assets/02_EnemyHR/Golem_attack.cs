@@ -40,10 +40,7 @@ public class Golem_attack : MonoBehaviour
         {
             navMeshAgent.isStopped = false;
 
-            Vector3 dirToMob = (transform.position - playerTarget.position).normalized;
-            Vector3 targetPos = playerTarget.position + (dirToMob * 1.5f); // 1.5f는 플레이어 몸집 반지름 정도
-
-            navMeshAgent.SetDestination(targetPos);
+            navMeshAgent.SetDestination(playerTarget.position);
 
             animator.SetBool("Walk", true);
         }

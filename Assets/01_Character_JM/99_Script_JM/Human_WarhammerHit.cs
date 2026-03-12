@@ -11,6 +11,9 @@ public class Human_WarhammerHit : MonoBehaviour
     [Header("PowerTransform")]
     public Transform attackerRoot;  // 캐릭터 루트(앞 방향을 쓰고 싶을 때)
 
+    // 추가
+    [Header("무기 데미지 설정")]
+    public float weaponDamage = 50f;
     private void OnTriggerEnter(Collider other)
     {
         // 공격 중이 아니면 무시
@@ -20,6 +23,11 @@ public class Human_WarhammerHit : MonoBehaviour
         if (!other.CompareTag("Cube_test")) return;
 
         Rigidbody rb = other.attachedRigidbody;
+
+        // 추가
+        Golem_HP golemHP = other.GetComponent<Golem_HP>();
+        if (golemHP != null) golemHP.TakeDamage(weaponDamage);
+
         if (rb == null) return;
 
         // 밀어낼 방향: 캐릭터가 보는 방향 + 살짝 위로
